@@ -3,20 +3,23 @@
     --white: #F3F7F0;
     --red: #831923;
     --blue: #5465FF;
+    --yellow: #F6AE2D;
+    --orange: #F26419;
+    --blue-green: #9AD2CB;
+    --green: #758E4F;
+    --light-yellow: #F3F9D2;
+    --purple: #F2BEFC;
+    --pink: #BB8588;
 }
 
 * {
-    color: var(--black);
+    /* color: var(--black); */
     background: var(--white);
     border: none;
     text-decoration: none;
     list-style: '';
     margin: 0;
     padding: 0;
-}
-
-img {
-    width: 280px;
 }
 
 #news, .news-title, .news-description {
@@ -44,7 +47,6 @@ img {
 
 .news-description {
     padding-bottom: clamp(10px, 1.5vw, 20px);
-    /* padding-bottom: 10px; */
 }
 
 .navbar-logo {
@@ -62,7 +64,8 @@ img {
     background: var(--black);
     position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
+    z-index: 20000;
 }
 
 .navbar li {
@@ -105,4 +108,152 @@ img {
     .navbar-nav {
         width: 20rem;
     }
+}
+
+.slides {
+    overflow-x: hidden;
+    position: absolute;
+    height: calc(100vh - 65px);
+    width: 100%;
+}
+
+.slides > div {
+    position: absolute;
+    height: calc(100vh - 65px);
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.carousel {
+    height: calc(100vh - 65px);
+    width: 100%;
+}
+
+.slide-1 {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slides p, .slides h2, .slides h1 {
+    background: none;
+    text-align: center;
+    color: var(--white);
+    font-variant: small-caps;
+    font-weight: 700;
+    -webkit-text-stroke: 1px var(--black);
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.slide-1 {
+    background-image: linear-gradient(45deg, var(--blue), var(--red));
+}
+
+.slide-2 {
+    background-image: linear-gradient(-45deg, var(--blue-green), var(--blue));
+}
+
+.slide-3 {
+    background-image: linear-gradient(135deg, var(--orange), var(--yellow));
+}
+
+.slide-4 {
+    background-image: linear-gradient(-135deg, var(--red), var(--orange));
+}
+
+.slide-5 {
+    background-image: linear-gradient(var(--light-yellow), var(--blue-green));
+}
+
+.slide-6 {
+    background-image: linear-gradient(180deg, var(--blue-green), var(--green));
+}
+.slide-7 {
+    background-image: linear-gradient(-90deg, var(--yellow), var(--light-yellow));
+}
+
+.slide-8 {
+    background-image: linear-gradient(90deg, var(--pink), var(--purple));
+}
+
+.slide-9 {
+    background-image: linear-gradient(var(--red), var(--pink));
+}
+
+.text-wrapper {
+    background: transparent;
+    margin-right: 5rem;
+}
+
+img {
+    z-index: 0;
+}
+
+.controls {
+    z-index: 13;
+    background: transparent;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.controls input {
+    margin: 0 0.3em;
+    accent-color: var(--red);
+    cursor: pointer;
+}
+
+.left, .right {
+    width: 1em;
+    background: transparent;
+    fill: var(--red);
+    position: relative;
+    cursor: pointer;
+}
+
+.left {
+    top: 2px;
+}
+
+.left svg, .right svg {
+    background: transparent;
+    cursor: pointer;
+}
+
+.right {
+    rotate: 180deg;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+.furn-descr, .slides p {
+    font-size: 2rem;
+}
+
+.furn-descr::after {
+    content: '(prices may vary)';
+    display: block;
+    font-size: 1.5rem;
 }

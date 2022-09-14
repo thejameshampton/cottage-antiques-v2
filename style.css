@@ -43,6 +43,7 @@
 
 .news-title {
     padding-bottom: 10px;
+    font-size: 1.5em;
 }
 
 .news-description {
@@ -256,4 +257,44 @@ img {
     content: '(prices may vary)';
     display: block;
     font-size: 1.5rem;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    color: var(--red);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+.about {
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    width: 400px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+p {
+    min-width: 45ch;
+    max-width: 65ch;
+    width: auto;
+}
+
+.content-container p {
+    margin-right: 5rem; 
 }

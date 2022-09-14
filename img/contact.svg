@@ -1,0 +1,39 @@
+<svg width="58" height="77" viewBox="0 0 58 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="contact">
+<rect id="books" x="0.5" y="0.5" width="48" height="76" stroke="black"/>
+<g id="rings">
+<g id="ring">
+<line id="Line 1" x1="51" y1="5.5" x2="57" y2="5.5" stroke="black"/>
+<line id="Line 2" x1="57.5" y1="5" x2="57.5" y2="16" stroke="black"/>
+<line id="Line 3" x1="51" y1="15.5" x2="57" y2="15.5" stroke="black"/>
+</g>
+<g id="ring_2">
+<line id="Line 1_2" x1="51" y1="19.5" x2="57" y2="19.5" stroke="black"/>
+<line id="Line 2_2" x1="57.5" y1="19" x2="57.5" y2="30" stroke="black"/>
+<line id="Line 3_2" x1="51" y1="29.5" x2="57" y2="29.5" stroke="black"/>
+</g>
+<g id="ring_3">
+<line id="Line 1_3" x1="51" y1="33.5" x2="57" y2="33.5" stroke="black"/>
+<line id="Line 2_3" x1="57.5" y1="33" x2="57.5" y2="44" stroke="black"/>
+<line id="Line 3_3" x1="51" y1="43.5" x2="57" y2="43.5" stroke="black"/>
+</g>
+<g id="ring_4">
+<line id="Line 1_4" x1="51" y1="47.5" x2="57" y2="47.5" stroke="black"/>
+<line id="Line 2_4" x1="57.5" y1="47" x2="57.5" y2="58" stroke="black"/>
+<line id="Line 3_4" x1="51" y1="57.5" x2="57" y2="57.5" stroke="black"/>
+</g>
+<g id="ring_5">
+<line id="Line 1_5" x1="51" y1="61.5" x2="57" y2="61.5" stroke="black"/>
+<line id="Line 2_5" x1="57.5" y1="61" x2="57.5" y2="72" stroke="black"/>
+<line id="Line 3_5" x1="51" y1="71.5" x2="57" y2="71.5" stroke="black"/>
+</g>
+</g>
+<g id="person">
+<g id="body">
+<path id="Vector 2" d="M24.5 40.5C19.6477 41.0675 17.01 42.1677 12.5 46C9.74853 48.7648 8.79112 50.972 8.5 56.5V76.5H24.5" stroke="black"/>
+<path id="Vector 3" d="M24.38 40.5C29.2323 41.0675 31.87 42.1677 36.38 46C39.1315 48.7648 40.0889 50.972 40.38 56.5V76.5H24.38" stroke="black"/>
+</g>
+<circle id="head" cx="24.1" cy="29.5" r="7" stroke="black"/>
+</g>
+</g>
+</svg>

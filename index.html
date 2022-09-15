@@ -10,6 +10,7 @@
     <script defer src="carousel.js"></script>
     <script defer src="news.js"></script>
     <script defer src="imgController.js"></script>
+    <script src="https://kit.fontawesome.com/47c2c5aaa1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="news">
@@ -124,42 +125,73 @@
             <p>Take a tour of our store and our refurnished furniture. </p>
             <div class="img-selector">
                 <div class="viewbar">
-                    <img src="img/IMG_0411.jpg.jpg" alt="">
-                    <img src="img/IMG_2328.jpg.jpg" alt="">
-                    <img src="img/IMG_2789.jpg.jpg" alt="">
-                    <img src="img/IMG952981.jpg.jpg" alt="">
-                    <img src="img/IMG_2984.jpg.jpg" alt="">
-                    <img src="img/IMG952735.jpg.jpg" alt="">
+                    <div>
+                        <img src="img/IMG_0411.jpg.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/IMG_2328.jpg.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/IMG_2789.jpg.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/IMG952981.jpg.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/IMG_2984.jpg.jpg" alt="">
+                    </div>
+                    <div class="last-image">
+                        <img src="img/IMG952735.jpg.jpg" alt="">
+                    </div>
                 </div>
                 <div class="main-img"><img src="img/IMG_0411.jpg.jpg" alt=""></div>
             </div>
         </div>
         <div class="contact">
             <h2 class="title">Contact Us</h2>
-            <div class="contact-info">
-                <h3 class="subtitle">Contact Information</h3>
-                <p>Here is our contact information. We also sell items on Facebook Marketplace and Craigslist. Check us out there.</p>
-                <a href="" class="phone-number"></a>
-                <a href="" class="facebook"></a>
-                <a href="" class="craigslist"></a>
-            </div>
-            <div class="hours">
-                <h3 class="subtitle">Hours</h3>
-                <p>Hours are by appointment. Please call us to arrange an appointment.</p>
-                <br>
-                <p>Also, on advertised, fair weather Fridays and Saturdays we will be holding open houses. Please come view our furniture then.</p>
-            </div>
-            <iframe
-                class="map"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpBuKc09epCZ5MQhRcVUNgTLmPdILmWvk&q=Delmont+NJ">
-            </iframe>
-            <div class="location">
-                <h3 class="subtitle">Location</h3>
-                <p>We are located in Delmont, New Jersey. The exact address will be shared once an appointment has been made.</p>
-                <br>
-                <p>Note: The Google Maps Map only shows the location of Delmont, New Jersey and not our specific location.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="subtitle">Contact Information</h3>
+                    <p>Here is our contact information. We also sell items on Facebook Marketplace and Craigslist. Check us out there.</p>
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:8567851884">
+                                <i class="fa-solid fa-phone"></i>
+                                (856) 785-1884
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/marketplace/109974832354100/search/?deliveryMethod=local_pick_up&query=cottage%20antiques&exact=true" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook Marketplace
+                            </a>
+                        </li>
+                        <li class="craigslist">
+                            <a href="https://www.craigslist.com" target="_blank">
+                                <i class="fa-solid fa-peace"></i>
+                                Craigslist
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hours">
+                    <h3 class="subtitle">Hours</h3>
+                    <p>Hours are by appointment. Please call us to arrange an appointment.</p>
+                    <br>
+                    <p>Also, on advertised, fair weather Fridays and Saturdays we will be holding open houses. Please come view our furniture then.</p>
+                </div>
+                <iframe
+                    class="map"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpBuKc09epCZ5MQhRcVUNgTLmPdILmWvk&q=Delmont+NJ">
+                </iframe>
+                <div class="location">
+                    <h3 class="subtitle">Location</h3>
+                    <p>We are located in Delmont, New Jersey. The exact address will be shared once an appointment has been made.</p>
+                    <br>
+                    <p>Note: The Google Maps Map only shows the location of Delmont, New Jersey and not our specific location.</p>
+                </div>
             </div>
         </div>
     </main>

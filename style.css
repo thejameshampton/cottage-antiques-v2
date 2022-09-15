@@ -335,7 +335,7 @@ img {
 
 .content-container div {
     width: clamp(300px, 80%, 400px);
-}
+}   
 
 figcaption {
     text-align: center;

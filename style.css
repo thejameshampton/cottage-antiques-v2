@@ -74,6 +74,7 @@
     width: fit-content;
     margin: 0;
     background: inherit;
+    transition: background 250ms ease-in-out;
 }
 
 .navbar path, .navbar g {
@@ -81,7 +82,8 @@
 }
 
 .navbar svg, .navbar button {
-    background: var(--black)
+    background: var(--black);
+    transition: background 250ms ease-in-out;
 }
 
 .navbar-nav {
@@ -89,6 +91,15 @@
     background: inherit;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+.navbar-nav button:hover, .navbar-nav svg:hover {
+    background: black;
+}
+
+.navbar-nav li:hover {
+    background: black;
 }
 
 .navbar-nav svg {
@@ -205,7 +216,6 @@ h2 {
 }
 
 .slide-9 {
-    z-index: 11;
     background-image: linear-gradient(var(--red), var(--pink));
 }
 

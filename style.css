@@ -135,7 +135,8 @@
     height: calc(100vh - 65px);
     top: 0;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     row-gap: clamp(1rem, 4vh, 3rem);
@@ -143,7 +144,7 @@
 
 @media screen and (max-width: 72em) {
     .slides > div {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -167,6 +168,8 @@
     font-variant: small-caps;
     font-weight: 700;
     -webkit-text-stroke: 1px var(--black);
+    width: fit-content;
+    margin: auto;
 }
 
 main {
@@ -222,6 +225,13 @@ h2 {
 .text-wrapper {
     background: transparent;
     width: 100%;
+}
+
+.img-wrapper {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 72rem) {
@@ -316,17 +326,30 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin: 3rem 3rem;
 }
 
 .about img {
-    width: clamp(300px, 80%, 600px);
+    width: 100%;
 }
 
-@media screen and (min-width: 60em) {
-    .about img {
-        width: 400px;        
-    }
+.content-container div {
+    width: clamp(300px, 80%, 400px);
+}
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+    width: fit-content;
+    margin: auto;
+}
+
+#before {
+    color: var(--red);
+}
+
+#after {
+    color: var(--blue);
 }
 
 .content-container {
@@ -344,7 +367,7 @@ img {
     width: 80%;
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 1400px) {
     .content-container {
         flex-direction: row;
     }

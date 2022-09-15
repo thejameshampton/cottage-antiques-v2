@@ -374,7 +374,6 @@ p {
     height: 80px;
     align-items: center;
     justify-content: center;
-    /* border-left: 1px solid var(--black); */
     border-collapse:collapse;
     margin: 0;
 }
@@ -395,6 +394,7 @@ p {
 @media screen and (min-width: 50em){
     .viewbar span {
         border-bottom: 1px solid var(--black);
+        display: flex;
         width: 105px;
         height: 80px;
     }
@@ -402,6 +402,7 @@ p {
     .viewbar img {
         max-width: 105px;
         max-height: 80px;
+        margin: auto;
     }
     .viewbar {
         width: 122px;
@@ -453,17 +454,17 @@ p {
 }
 
 .contact-content {
-    width: clamp(300px, 100%, 1400px);
+    width: clamp(270px, 90%, 1400px);
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
-    row-gap: 5em;
+    row-gap: 2rem;
+    margin: 2.5rem auto;
 }
 
-@media screen and (min-width: 50em) {
-    .contact-content {
-        grid-template-columns: 1fr 1fr;
-    }
+
+.contact-content ul {
+    width: 90%;
+    margin: auto;
 }
 
 .contact-content p, .contact-content iframe{
@@ -480,9 +481,8 @@ p {
     text-decoration: underline;
     text-underline-position: under;
     font-size: 1.5rem;
-    margin-top: 3rem;
     margin-bottom: 1rem;
-
+    
 }
 
 .contact {
@@ -493,9 +493,15 @@ p {
 }
 
 .contact-content iframe {
-    height: clamp(290px, 80%, 400px);
-    width: clamp(290px, 80%, 400px);
+    height: clamp(266px, 50%, 400px);
+    width: clamp(266px, 80%, 400px);
     border: 3px solid var(--black);
+}
+
+@media screen and (max-width: 63em) {
+    .contact-content iframe {
+        margin-bottom: 100px;
+    }
 }
 
 i {
@@ -515,6 +521,20 @@ i {
     font-size: clamp(12px, 3vw, 24px);
 }
 
+@media screen and (min-width: 63em) {
+    .contact-content {
+        row-gap: 5em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-content ul {
+        margin: 0;
+    }
+
+    .subtitle {
+        margin-top: 3rem;
+    }
+}
 footer {
     margin-top: 7rem;
     color: var(--white);
@@ -522,7 +542,7 @@ footer {
     padding: 2rem 0;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (max-width: 50em) {
     footer {
         margin-bottom: 65px;
     }
@@ -545,6 +565,7 @@ footer nav {
 footer p {
     width: 100%;
     margin: 1rem auto;
+    text-align: center;
 }
 
 footer li:not(:last-child)::after {

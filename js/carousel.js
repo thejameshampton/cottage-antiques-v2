@@ -1,12 +1,12 @@
-const s1 = document.getElementById('s1');
-const s2 = document.getElementById('s2');
-const s3 = document.getElementById('s3');
-const s4 = document.getElementById('s4');
-const s5 = document.getElementById('s5');
-const s6 = document.getElementById('s6');
-const s7 = document.getElementById('s7');
-const s8 = document.getElementById('s8');
-const s9 = document.getElementById('s9');
+const s1 = document.getElementById('carousel__slide-1');
+const s2 = document.getElementById('carousel__slide-2');
+const s3 = document.getElementById('carousel__slide-3');
+const s4 = document.getElementById('carousel__slide-4');
+const s5 = document.getElementById('carousel__slide-5');
+const s6 = document.getElementById('carousel__slide-6');
+const s7 = document.getElementById('carousel__slide-7');
+const s8 = document.getElementById('carousel__slide-8');
+const s9 = document.getElementById('carousel__slide-9');
 
 const r1 = document.getElementById('rd1')
 const r2 = document.getElementById('rd2');
@@ -18,9 +18,9 @@ const r7 = document.getElementById('rd7');
 const r8 = document.getElementById('rd8');
 const r9 = document.getElementById('rd9');
 
-const left = document.getElementById('left');
-const right = document.getElementById('right');
-const sect = document.getElementById('controls');
+const left = document.getElementById('carousel__controls__left');
+const right = document.getElementById('carousel__controls__right');
+const sect = document.getElementById('carousel__controls');
 
 const sArray = [s1, s2, s3, s4, s5, s6, s7, s8, s9];
 const rArray = [r1, r2, r3, r4, r5, r6, r7, r8, r9];

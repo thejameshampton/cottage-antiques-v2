@@ -2,14 +2,19 @@ const hn = document.getElementById('navbar__home');
 const an = document.getElementById('navbar__about');
 const tn = document.getElementById('navbar__tour');
 const cn = document.getElementById('navbar__contact');
-const hf = document.getElementById('home-footer');
-const af = document.getElementById('about-footer');
-const tf = document.getElementById('tour-footer');
-const cf = document.getElementById('contact-footer');
+const hf = document.getElementById('footer__home');
+const af = document.getElementById('footer__about');
+const tf = document.getElementById('footer__tour');
+const cf = document.getElementById('footer__contact');
 const h = document.getElementById('carousel');
-const a = document.getElementById('about-main');
-const t = document.getElementById('tour-main');
-const c = document.getElementById('contact-main');
+const a = document.getElementById('about');
+const t = document.getElementById('tour');
+const c = document.getElementById('contact');
+
+console.log(h);
+console.log(a);
+console.log(t);
+console.log(c);
 
 const hScroll = () => {
     h.scrollIntoView({

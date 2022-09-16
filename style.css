@@ -285,7 +285,7 @@ img {
 }
 
 .left {
-    top: 2px;
+    top: 1px;
 }
 
 .left svg, .right svg {
@@ -294,8 +294,7 @@ img {
 }
 
 .right {
-    rotate: 180deg;
-    bottom: 2px;
+    top: 1px;
     cursor: pointer;
 }
 

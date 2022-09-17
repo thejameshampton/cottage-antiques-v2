@@ -28,5 +28,5 @@ class News {
     }
 }
 
-const news = new News('blerk', 'black');
+const news = new News('Open House', 'Open House Friday, 9/16 to Saturday, 9/17 from 9:00AM-3:00PM.');
 news.append();

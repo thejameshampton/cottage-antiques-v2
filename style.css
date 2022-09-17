@@ -64,29 +64,29 @@
 
 /** News Styles **/
 @media {
-    #news {
+    .news {
         background: var(--blue);
         color: var(--white);
         padding-left: 1em;
         padding-top: 1em;
     }
     
-    #news__title, #news__description {
+    .news__title, .news__description {
         background: inherit;
         color: inherit;
     }
     
-    #news__title {
+    .news__title {
         padding-bottom: 10px;
         font-size: 1.5em;
     }
     
-    #news__description {
+    .news__description {
         padding-bottom: clamp(10px, 1.5vw, 20px);
         max-width: fit-content;
     }
     
-    #news__close {
+    .news__close {
         color: inherit;
         background: var(--red);
         padding: 0px 5px;

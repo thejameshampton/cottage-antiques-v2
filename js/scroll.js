@@ -11,11 +11,6 @@ const a = document.getElementById('about');
 const t = document.getElementById('tour');
 const c = document.getElementById('contact');
 
-console.log(h);
-console.log(a);
-console.log(t);
-console.log(c);
-
 const hScroll = () => {
     h.scrollIntoView({
         behavior: 'smooth',

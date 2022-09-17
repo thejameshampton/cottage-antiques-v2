@@ -28,5 +28,15 @@ class News {
     }
 }
 
-const news = new News('Open House', 'Open House Friday, 9/16 to Saturday, 9/17 from 9:00AM-3:00PM.');
-news.append();
+const setNews = async () => {
+    const data = await fetch('../news.json');
+    const newsResults = await data.json();
+    for(let i = 0; i < newsResults.alerts.length; i++) {
+        if(newsResults.alerts[i].status === 'on') {
+            const news = new News(newsResults.alerts[i].title, newsResults.alerts[i].description);
+            news.append();
+        }
+    }
+}
+
+setNews();

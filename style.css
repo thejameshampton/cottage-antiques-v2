@@ -13,7 +13,7 @@
         --purple: #F2BEFC;
         --pink: #BB8588;
         --border: 1px solid var(--black);
-        --page-height: calc(100vh - 65px);
+        --page-height: calc(100vh - 80px);
     }
     
     * {
@@ -24,6 +24,19 @@
         list-style: '';
         margin: 0;
         padding: 0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5rem;
+        background: var(--white);
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--black);
     }
     
     main {
@@ -59,6 +72,14 @@
         max-width: 65ch;
         width: auto;
         font-size: clamp(12px, 3vw, 24px);
+    }
+
+    body::last-child {
+        display: none;
+    }
+
+    footer {
+        display: block;
     }
 }
 
@@ -103,17 +124,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 65px;
+        height: 80px;
         background: var(--black);
         position: fixed;
         bottom: 0;
         width: 100%;
         z-index: 20000;
+        fill: var(--black);
     }
     
     #navbar__logo {
         display: none;
-        width: 45px;
+        width: 60px;
         margin-left: 5rem;
         background: inherit;
     }
@@ -136,13 +158,20 @@
         stroke: var(--white);    
     }
     
-    #navbar svg, #navbar button {
-        background: var(--black);
+    #navbar button, #navbar figure, #navbar figcaption {
+        background: inherit;
         transition: background 250ms ease-in-out;
     }
     
-    #navbar button:hover, #navbar svg:hover, #navbar li:hover {
+    #navbar svg {
+        fill: inherit;
+        transition: fill 250ms ease-in-out;
+        background: inherit;
+    }
+    
+    #navbar figure:hover, #navbar figure:hover svg, #navbar figure:hover button, #navbar figure:hover figcaption {
         background: black;
+        fill: black;
     }
     
     #navbar svg {
@@ -150,6 +179,12 @@
         width: 45px;
     }
     
+    #navbar figcaption {
+        color: white;
+        font-size: 1em;
+        line-height: 1em;
+    }
+
     @media screen and (min-width: 50em) {
         #navbar {
             position: sticky;
@@ -417,7 +452,7 @@
         height: 80px;
     }
     
-    #tour__viewbar span {
+    #tour__viewbar figure {
         width: 60px;
         height: 80px;
         align-items: center;
@@ -425,6 +460,7 @@
         border-collapse:collapse;
         margin: 0;
         cursor: pointer;
+        display: inline;
     }
     
     #tour__viewbar img {
@@ -470,7 +506,7 @@
             max-width: 525px;
         }
 
-        #tour__viewbar span {
+        #tour__viewbar figure {
             border-bottom: var(--border);
             display: flex;
             width: 105px;

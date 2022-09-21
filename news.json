@@ -2,10 +2,14 @@
     "alerts": [{
         "status": "on",
         "title": "Open House",
-        "description": "Open House Friday, 9/16 to Saturday, 9/17 from 9:00AM-3:00PM."
+        "description1": "Open House October 14th-15th and December 2nd-3rd from 9:00AM-3:00PM.",
+        "description2": "WEATHER PERMITTING",
+        "description3": ""
     }, {
         "status": "off",
         "title": "big",
-        "description": "zoop"
+        "description1": "zoop",
+        "description2": "zoop",
+        "description3": "zoop"
     }]
 }

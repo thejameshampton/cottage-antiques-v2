@@ -24,6 +24,8 @@
         list-style: '';
         margin: 0;
         padding: 0;
+        font-size: 20px;
+        font-variant: small-caps;
     }
 
     ::-webkit-scrollbar {
@@ -38,7 +40,12 @@
     ::-webkit-scrollbar-track {
         background: var(--black);
     }
-    
+
+    ::selection {
+        background: var(--red);
+        color: var(--white);
+    }
+
     main {
         width: 100%;
         margin: 0;
@@ -71,7 +78,7 @@
         min-width: 35ch;
         max-width: 65ch;
         width: auto;
-        font-size: clamp(12px, 3vw, 24px);
+        font-size: clamp(0.75rem, 3vw, 1.5rem);
     }
 
     body::last-child {
@@ -98,12 +105,12 @@
     }
     
     .news__title {
-        padding-bottom: 10px;
-        font-size: 1.5em;
+        padding-bottom: 0.7rem;
+        font-size: clamp(1.5em, 3vw, 3rem);
     }
     
     .news__description {
-        padding-bottom: clamp(10px, 1.5vw, 20px);
+        padding-bottom: clamp(0.7rem, 1.5vw, 1.25rem);
         max-width: fit-content;
     }
     
@@ -113,7 +120,7 @@
         padding: 0px 5px;
         border-radius: 50%;
         float: right;
-        margin: 8px 5px;
+        margin: 8px 12px;
         cursor: pointer;
     }
 }
@@ -195,7 +202,7 @@
         #navbar__logo {
             display: block;
         }
-    
+        
         #navbar__nav {
             width: 20rem;
         }
@@ -222,11 +229,16 @@
         justify-content: center;
         align-items: center;
         row-gap: clamp(1rem, 4vh, 3rem);
+        transition: opacity 1s ease;
+        opacity: 0;
+    }
+
+    #carousel .carousel__logo {
+        width: 300px;
     }
     
     #carousel__slide-1 {
         width: 100%;
-        z-index: 10;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -236,7 +248,6 @@
         background: none;
         text-align: center;
         color: var(--white);
-        font-variant: small-caps;
         font-weight: 700;
         -webkit-text-stroke: 1px var(--black);
         width: fit-content;
@@ -275,7 +286,17 @@
     }
     
     #carousel__slide-9 {
+        background-image: linear-gradient(-45deg, var(--blue), var(--orange));
+    }
+    
+    #carousel__slide-10 {
+        /* opacity: 1 !important; */
         background-image: linear-gradient(var(--red), var(--pink));
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+    
+    #carousel__slide-10 img {
+        margin: 0 !important;
     }
     
     .carousel__text {
@@ -288,6 +309,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     
     
@@ -295,6 +317,7 @@
         border-radius: 2%;
         max-width: clamp(300px, 80%, 500px);
         max-height: 43vh;
+        background: transparent;
     }
     
     
@@ -343,7 +366,7 @@
     }
     
     .furn-descr::after {
-        content: '(prices may vary)';
+        content: '(prices may vary, cash only)';
         display: block;
         font-size: clamp(0.6rem, 5vw, 1.5rem);
     }
@@ -356,17 +379,18 @@
             max-height: fit-content;
             max-width: fit-content;
         }
-
+        
         .carousel__text {
             margin-right: 5rem;
         }
     }
-
+    
     @media screen and (max-width: 71.998em) {
         #carousel > div {
             grid-template-columns: 1fr;
         }
     }
+
 }
 
 /** About Styles **/
@@ -413,7 +437,7 @@
     
     figcaption {
         text-align: center;
-        font-size: 25px;
+        font-size: 1.5rem;
         width: fit-content;
         margin: auto;
     }
@@ -520,7 +544,7 @@
         }
 
         #tour__viewbar {
-            width: 122px;
+            width: 113px;
             height: 400px;
             overflow: auto;
         }
@@ -551,7 +575,7 @@
     }
     
     #contact li, footer li {
-        font-size: clamp(12px, 3vw, 24px);
+        font-size: clamp(0.75rem, 3vw, 1.5rem);
     }
 
     #contact__content {
@@ -650,6 +674,10 @@
     footer li:not(:last-child)::after {
         content: '|';
         color: var(--red);
+    }
+
+    footer li {
+        cursor: pointer;
     }
 
     @media screen and (max-width: 50em) {

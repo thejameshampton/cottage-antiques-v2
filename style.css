@@ -75,7 +75,7 @@
     }
 
     p {
-        min-width: 35ch;
+        min-width: 30ch;
         max-width: 65ch;
         width: auto;
         font-size: clamp(0.75rem, 3vw, 1.5rem);
@@ -144,12 +144,12 @@
         display: none;
         width: 60px;
         margin-left: 5rem;
-        background: inherit;
+        background: transparent;
     }
     
     #navbar__nav {
         width: 100%;
-        background: inherit;
+        background: var(--black);
         display: flex;
         justify-content: space-evenly;
     }
@@ -157,7 +157,7 @@
     #navbar li {
         width: fit-content;
         margin: 0;
-        background: inherit;
+        background: var(--black);
         transition: background 250ms ease-in-out;
     }
 
@@ -166,21 +166,25 @@
     }
     
     #navbar button, #navbar figure, #navbar figcaption {
-        background: inherit;
+        background: var(--black);
         transition: background 250ms ease-in-out;
     }
     
     #navbar svg {
-        fill: inherit;
+        fill: var(--black);
         transition: fill 250ms ease-in-out;
         background: inherit;
     }
     
     #navbar figure:hover, #navbar figure:hover svg, #navbar figure:hover button, #navbar figure:hover figcaption {
-        background: black;
-        fill: black;
+        background: slateblue;
+        fill: slateblue;
     }
     
+    #navbar figure svg {
+        transition: fill 250ms ease-in-out;
+    }
+
     #navbar svg {
         height: 45px;
         width: 45px;
@@ -473,7 +477,12 @@
         display: block;
         overflow-x: scroll;
         width: 290px;
-        height: 80px;
+        height: 90px;
+    }
+
+    #tour__viewbar::-webkit-scrollbar {
+        height: 0.5rem;
+        width: 0rem;
     }
     
     #tour__viewbar figure {
@@ -547,6 +556,11 @@
             width: 113px;
             height: 400px;
             overflow: auto;
+        }
+
+        #tour__viewbar::-webkit-scrollbar {
+            width: 0.5rem;
+            height: 0;
         }
     }
     

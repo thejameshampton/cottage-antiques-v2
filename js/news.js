@@ -1,4 +1,6 @@
+//Created a class because I could
 class News {
+    //constructor creates and initializes a container with a title, a close button, and between 1 and 3 descriptions
     constructor(title, description1, description2, description3) {
         this.container = document.createElement('div');
         this.container.classList.add('news');
@@ -36,12 +38,14 @@ class News {
             this.container.appendChild(this.description3);
         }
     }
-    
+
+    //Appends news to header
     append() {
         document.getElementById('news-list').append(this.container);
     }
 }
 
+//Imports JSON file and sets up a news alert for each instance in the file
 const setNews = async () => {
     const data = await fetch('../news.json');
     const newsResults = await data.json();

@@ -9,6 +9,7 @@ const s7 = document.getElementById('carousel__slide-7');
 const s8 = document.getElementById('carousel__slide-8');
 const s9 = document.getElementById('carousel__slide-9');
 const s10 = document.getElementById('carousel__slide-10');
+const s11 = document.getElementById('carousel__slide-11');
 
 //Getting all of the radio buttons
 const r1 = document.getElementById('rd1')
@@ -21,6 +22,7 @@ const r7 = document.getElementById('rd7');
 const r8 = document.getElementById('rd8');
 const r9 = document.getElementById('rd9');
 const r10 = document.getElementById('rd10');
+const r11 = document.getElementById('rd11');
 
 //Getting the left, right, and the general controls area
 const left = document.getElementById('carousel__controls__left');
@@ -28,8 +30,8 @@ const right = document.getElementById('carousel__controls__right');
 const controls = document.getElementById('carousel__controls');
 
 //Sticking slides and radio buttons in arrays
-const sArray = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
-const rArray = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10];
+const sArray = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11];
+const rArray = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11];
 
 //Initializing variables
 let indexPreviouslyChecked = 0;

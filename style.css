@@ -303,7 +303,8 @@
     }
 
     #carousel__slide-11 {
-        background-image: linear-gradient(180deg, var(--green), var(--blue))
+        background-image: linear-gradient(180deg, var(--green), var(--blue));
+        pointer-event: none;
     }
     
     #carousel__slide-10 img {

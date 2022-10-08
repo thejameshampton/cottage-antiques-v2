@@ -82,8 +82,15 @@
         font-size: clamp(0.75rem, 3vw, 1.5rem);
     }
 
-    body::last-child {
+    body::last-child, #footer ~ div {
+        display: none !important;
+    }
+
+    #footer ~ div {
+        opacity: 0;
+        pointer-event: none;
         display: none;
+        cursor: default !important;
     }
 
     footer {

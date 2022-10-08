@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://ka-f.fontawesome.com; img-src 'self'; script-src 'self' https://kit.fontawesome.com; frame-src https://www.google.com; style-src 'self' 'unsafe-inline'; font-src https://ka-f.fontawesome.com"> -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        connect-src 'self' https://ka-f.fontawesome.com; 
+        img-src 'self'; 
+        script-src 'self' 'unsafe-inline' https://analytics-api.statvoo.com https://static.statvoo.com https://kit.fontawesome.com; 
+        frame-src https://www.google.com; 
+        style-src 'self' 'unsafe-inline'; 
+        font-src https://ka-f.fontawesome.com">
     <title>Cottage Antiques | Refinished Antique Furniture | South New Jersey (NJ)</title>
     <link rel="icon" type ="image/x-icon" href="img/logo.webp"></link>
     <link rel="stylesheet" href="style.css">
@@ -14,6 +21,12 @@
     <script defer src="js/scroll.js"></script>
     <script defer src="js/imgController.js"></script>
     <script defer src="https://kit.fontawesome.com/47c2c5aaa1.js"></script>
+    <script defer type="text/javascript"> (function(){ var s =
+        document.createElement('script'); s.src =
+        document.location.protocol+'//static.statvoo.com/js/analytics-min.js'; s.type =
+        'text/javascript'; s.async = true; var t =
+        document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); })();
+        </script>
 </head>
 <body>
     <header id="news-list"></header>
